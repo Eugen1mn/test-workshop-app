@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Сервісний центр «Назва»</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/modern-normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<!-- Sidebar -->
+			<aside>
+				<nav>
+					<a class="current" href="index.html">
+						<svg width="17.52" height="23">
+							<use href="./img/symbol-defs.svg#file"></use>
+						</svg>
+						Нові заявки
+					</a>
+					<a href="work-orders.html">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#tools"></use>
+						</svg>
+						Заявки у роботі</a
+					>
+					<a href="#">
+						<svg width="23" height="21">
+							<use href="./img/symbol-defs.svg#folders"></use>
+						</svg>
+						Архів заявок</a
+					>
+					<a href="#">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#masters"></use>
+						</svg>
+						Майстри</a
+					>
+					<a href="#">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#phone"></use>
+						</svg>
+						Контакти</a
+					>
+					<a href="#">
+						<svg width="23" height="20.92">
+							<use href="./img/symbol-defs.svg#exit"></use>
+						</svg>
+						Вихід</a
+					>
+				</nav>
+			</aside>
+
+			<!-- Content -->
+			<main>
+				<header>
+					<h1>Сервісний центр «Назва»</h1>
+				</header>
+
+				<section>
+					<div class="filter-bar">
+						<h2>Нові заявки <span>+10</span></h2>
+
+						<div class="filter-container">
+							<!-- Custom Select -->
+							<div class="custom-select" data-select>
+								<button data-select-trigger>
+									<span>Усі прилади</span>
+									<svg width="13.95" height="8">
+										<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+									</svg>
+								</button>
+								<div class="custom-select__options" data-select-options>
+									<div>Усі прилади</div>
+									<div>Бойлер</div>
+									<div>Газовий котел</div>
+								</div>
+							</div>
+							<!-- Search -->
+							<div class="search">
+								<svg class="search__icon" width="23" height="20">
+									<use href="./img/symbol-defs.svg#search"></use>
+								</svg>
+								<input class="search__input" type="text" placeholder="Пошук" />
+							</div>
+							<button class="add-button">
+								<svg width="20" height="20">
+									<use href="./img/symbol-defs.svg#plus"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<table>
+						<thead>
+							<tr>
+								<th>№ Заявки</th>
+								<th>Дата</th>
+								<th>Що зламалося</th>
+								<th>Адреса</th>
+								<th>Телефон</th>
+								<th>Ім’я клієнта</th>
+								<th></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>63&nbsp;753</td>
+								<td>19.01.25</td>
+								<td>Бойлер</td>
+								<td>Вул. Чорноморського Козацтва, 806</td>
+								<td>096 145 84 54</td>
+								<td>Поздняков Артем</td>
+								<td>
+									<button
+										class="kebab"
+										type="button"
+										aria-haspopup="menu"
+										aria-expanded="false"
+									>
+										<span></span><span></span><span></span>
+									</button>
+									<div class="row-menu">
+										<button data-act="view">
+											<svg width="20" height="13" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#eye" />
+											</svg>
+										</button>
+										<button data-act="edit">
+											<svg width="20" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#edit" />
+											</svg>
+										</button>
+										<button data-act="delete">
+											<svg width="18" height="20" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#trash" />
+											</svg>
+										</button>
+										<button data-act="close">
+											<svg width="12" height="12" aria-hidden="true">
+												<use href="./img/symbol-defs.svg#close" />
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</main>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

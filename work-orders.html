@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Сервісний центр «Назва»</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/modern-normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container media-container">
+			<!-- Sidebar -->
+			<aside>
+				<nav>
+					<a href="index.html">
+						<svg width="17.52" height="23">
+							<use href="./img/symbol-defs.svg#file"></use>
+						</svg>
+						Нові заявки <span>2</span>
+					</a>
+					<a class="current" href="work-orders.html">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#tools"></use>
+						</svg>
+						Заявки у роботі</a
+					>
+					<a href="#">
+						<svg width="23" height="21">
+							<use href="./img/symbol-defs.svg#folders"></use>
+						</svg>
+						Архів заявок</a
+					>
+					<a href="#">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#masters"></use>
+						</svg>
+						Майстри</a
+					>
+					<a href="#">
+						<svg width="23" height="23">
+							<use href="./img/symbol-defs.svg#phone"></use>
+						</svg>
+						Контакти</a
+					>
+					<a href="#">
+						<svg width="23" height="20.92">
+							<use href="./img/symbol-defs.svg#exit"></use>
+						</svg>
+						Вихід</a
+					>
+				</nav>
+			</aside>
+
+			<!-- Content -->
+			<main>
+				<header>
+					<h1>Сервісний центр «Назва»</h1>
+				</header>
+				<section class="work-order">
+					<div>
+						<h2>Заявка 63 757</h2>
+						<ul>
+							<li><span></span><span>Що зламалося</span><span>Бойлер</span></li>
+							<li>
+								<span></span><span>Коментар клієнта</span
+								><span>Не включається, не гріє воду</span>
+							</li>
+							<li><span></span><span>Майстер</span><span>Петрович М.</span></li>
+							<li>
+								<span></span><span>Адреса</span
+								><span>Одеса, вул. Чорноморського Козацтва, 806</span>
+							</li>
+							<li>
+								<span></span><span>Контакт клієнта</span
+								><span>096 585 45 14, Поздняков Артем</span>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="work-order-details">
+					<h2>Деталі заявки</h2>
+					<button class="close" data-act="close">
+						<svg width="12" height="12" aria-hidden="true">
+							<use href="./img/symbol-defs.svg#close" />
+						</svg>
+					</button>
+
+					<form>
+						<p>Статус заявки</p>
+						<div class="custom-select" data-select>
+							<button data-select-trigger>
+								<span>Виконана</span>
+								<svg width="13.95" height="8">
+									<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="master-name-block">
+							<label for="master-name"
+								><p>Майстер</p>
+
+								<input
+									id="master-name"
+									name="masterName"
+									type="text"
+									value="Петрович М."
+									readonly
+									aria-readonly="true"
+							/></label>
+							<button>Змінити майстра</button>
+						</div>
+						<div class="custom-select-open-block">
+							<p>Тип робіт</p>
+							<div class="custom-select">
+								<button>
+									<span>Сервісне обслуговання обладнання</span>
+									<svg width="13.95" height="8">
+										<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+									</svg>
+								</button>
+							</div>
+							<ul>
+								<li>Огляд технічного стану обладнання</li>
+								<li class="is-selected">Сервісне обслуговання обладнання</li>
+								<li>Виконання робіт за гарантійного ремонту</li>
+								<li>Акт відмови в проведенні пуско-налагоджувальних робіт</li>
+							</ul>
+						</div>
+						<p>Модель виробу</p>
+						<div class="custom-select">
+							<button>
+								<span>Rens 80 I</span>
+								<svg width="13.95" height="8">
+									<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+								</svg>
+							</button>
+						</div>
+
+						<label class="start-date" for="start-date"
+							><p>Дата введення в єксплуатацію</p>
+
+							<input
+								id="start-date"
+								name="startDate"
+								type="text"
+								value="17.06.2025"
+						/></label>
+
+						<label class="last-service-date" for="last-service-date"
+							><p>Дата останнього проведення тех. обслуговування</p>
+
+							<input
+								id="last-service-date"
+								name="lastServiceDate"
+								type="text"
+								value="17.06.2025"
+						/></label>
+
+						<label class="comment">
+							<p>Коментар майстра</p>
+							<textarea
+								name="comment"
+								rows="5"
+								placeholder="Введіть коментар..."
+							>
+Перегорів ТЕН
+              </textarea>
+						</label>
+						<div class="link-action">
+							<button class="add-button">
+								<svg width="20" height="20">
+									<use href="./img/symbol-defs.svg#plus"></use>
+								</svg>
+							</button>
+							<p>Додати ще причину виходу за ладу</p>
+						</div>
+
+						<p>Причина виходу з ладу</p>
+						<div class="custom-select" data-select>
+							<button data-select-trigger>
+								<span>Перегорів ТЕН</span>
+								<svg width="13.95" height="8">
+									<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+								</svg>
+							</button>
+						</div>
+
+						<p>Гарантійний випадок</p>
+						<div class="custom-select" data-select>
+							<button data-select-trigger>
+								<span>Так</span>
+								<svg width="13.95" height="8">
+									<use href="./img/symbol-defs.svg#arrow-bottom"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="damage-photo-bock">
+							<label>Фото причини поломки</label>
+							<img src="img/image.png" alt="" id="damage-photo" />
+							<button type="button" class="add-button" aria-label="Додати фото">
+								<svg width="20" height="20" aria-hidden="true">
+									<use href="./img/symbol-defs.svg#plus"></use>
+								</svg>
+							</button>
+						</div>
+
+						<label class="part-number" for="part-number"
+							><p>Номер запчастини</p>
+
+							<input
+								id="part-number"
+								name="partNumber"
+								type="text"
+								value="184232"
+						/></label>
+
+						<label class="part-price" for="part-price"
+							><p>Ціна запчастин, грн</p>
+
+							<input id="part-price" name="partPrice" type="text" value="0,00"
+						/></label>
+
+						<label class="work-price" for="work-price"
+							><p>Вартість робіт, грн</p>
+
+							<input id="work-price" name="workPrice" type="text" value="0,00"
+						/></label>
+
+						<label class="total-price" for="total-price"
+							><p>Загальна вартість, грн</p>
+
+							<input
+								id="total-price"
+								name="totalPrice"
+								type="text"
+								value="0,00"
+						/></label>
+
+						<div class="pdf-block">
+							<a href="files/act.pdf" class="file-item" target="_blank">
+								<svg width="57" height="60" aria-hidden="true">
+									<use href="./img/symbol-defs.svg#pdf-file"></use>
+								</svg>
+								<span>Акт введення в експлуатацію.pdf</span>
+							</a>
+						</div>
+
+						<button class="save-btn">Зберегти</button>
+					</form>
+				</section>
+			</main>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>
